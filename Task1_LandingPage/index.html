@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Outfit:wght@500&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>LearnX</title>
+  </head>
+  <body>
+    
+    <div class="navbar">
+     
+      <div class="logo">
+        <img src="./pics/logo.png" alt="logo" width = "150px" class = "logo_size" />
+      </div>
+      <nav id = "navbar_id">
+        <ul>
+          <li>HOME</li>
+          <li>COURSES</li>
+          <li>SERVICES</li>
+          <li>ABOUT</li>
+        </ul>
+      </nav>
+      <button>LOGIN</button>
+      <button>REGISTER</button>
+      <div class = "toggle-btn"  onclick = "navbar_display();">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    
+    </div>
+
+    <div class="container">
+      <div>
+        <h1>Welcome to LearnX</h1>
+        <p>
+          Unlock Your Potential: Learn, Grow, Succeed with Our Online Courses!
+        </p>
+        <p class="text">
+          Are you ready to embark on a journey of lifelong learning and personal
+          growth? Look no further! At LearnX, we believe that knowledge knows no
+          bounds, and we're here to help you unlock your full potential.
+        </p>
+        <button class="btn">Start Now</button>
+      </div>
+      <div class="img"></div>
+    </div>
+
+    <div class="info">
+      <p class="main-heading">Why Choose Us?</p>
+      <div class="main-box">
+        <div class="s-box">
+          <p class="sub-heading">Diverse Course Catalog</p>
+          <p class="para">
+            Explore a wide range of courses, from business, technology, arts and
+            more. Our catalog is designed to cater to your interests and career
+            goals.
+          </p>
+        </div>
+        <div class="s-box">
+          <p class="sub-heading">Expert Instructors</p>
+          <p class="para">
+            Learn from industry experts, professors, and professionals who are
+            passionate about sharing their knowledge and experience with you.
+          </p>
+        </div>
+
+        <div class="s-box">
+          <p class="sub-heading">Flexible Learning</p>
+          <p class="para">
+            Study at your own pace, on your schedule. Our courses are designed
+            to fit seamlessly into your busy life.
+          </p>
+        </div>
+
+        <div class="s-box">
+          <p class="sub-heading">Certification</p>
+          <p class="para">
+            Earn certificates upon course completion to enhance your resume and
+            showcase your newfound skills.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="email-box">
+      <p class="email-box-heading">Join and Get 30 Days Free Class</p>
+      <input placeholder="Email" /><button class="email_btn">
+        Get Started
+      </button>
+    </div>
+
+    <div class="footer">
+
+      <div class = "footer_box">
+        <div class="footer_logo">
+          <img src="./pics/logo1.png" alt="logo" width="155px" />
+        </div>
+        <p class="footer_text">
+          Copyright © 2023. All Rights Reserved LearnX.com
+        </p>
+      </div>
+
+      <div class = "footer_box">
+        <p class = "text1">Follow LearnX</p>
+        <img src="./pics/facebook.svg" alt="" srcset="" class = "icon">
+        <img src="./pics/instagram.svg" alt="" srcset="" class = "icon">
+        <img src="./pics/twitter.svg" alt="" srcset="" class = "icon">
+        <img src="./pics/youtube.svg" alt="" srcset="" class = "icon">
+        <img src="./pics/linkedin.svg" alt="" srcset="" class = "icon">
+      </div>
+
+      <div class = "footer_box">
+        <p>Quick Links</p>
+        <p class = "links">HOME</p>
+        <p class = "links">COURSES</p>
+        <p class = "links">SERVICES</p>
+        <p class = "links">ABOUT US</p>
+      </div>
+    </div>
+
+    <script>
+
+      function navbar_display() {
+        var navbar = document.getElementById('navbar_id');
+        navbar.classList.toggle('show');
+
+      }
+
+    </script>
+
+  </body>
+</html>

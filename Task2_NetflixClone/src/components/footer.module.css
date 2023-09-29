@@ -1,0 +1,121 @@
+.container {
+  background-color: black;
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.big_box {
+  max-height: 100%;
+  margin: 10px;
+  background-color: black;
+}
+
+.list {
+  background-color: rgb(0, 0, 0);
+  margin-top: 60px;
+}
+
+.list li {
+  color: rgb(209, 209, 209);
+  list-style: none;
+  text-decoration: underline;
+  font-weight: 400;
+  text-align: justify;
+  margin: 0px 0px 10px 70px;
+  background-color: black;
+}
+
+.text {
+  color: rgb(209, 209, 209);
+  margin: 10px;
+  background-color: black;
+}
+
+.lan_btn {
+  color: rgb(209, 209, 209);
+  height: 30px;
+  width: 110px;
+  border-radius: 3px;
+  background-color: rgb(26, 25, 25);
+  font-weight: bolder;
+  margin: 10px;
+}
+
+@media screen and (max-width: 1150px) {
+  .lan_btn {
+    margin-left: 55px;
+  }
+
+  .text {
+    margin-left: 55px;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .list li {
+    margin-left: 40px;
+  }
+  .lan_btn {
+    margin-left: 35px;
+  }
+
+  .text {
+    margin-left: 35px;
+  }
+}
+
+@media screen and (max-width: 825px) {
+    .list li {
+      margin-left: 20px;
+    }
+  }
+
+  @media screen and (max-width: 770px) {
+    .list li {
+      margin-left: 0px;
+    }
+    .lan_btn {
+        margin-left: 15px;
+      }
+    
+      .text {
+        margin-left: 15px;
+      }
+  }
+
+  @media screen and (max-width: 650px) {
+      .big_box {
+       
+        margin: 0px;
+        
+      }
+  }
+
+  @media screen and (max-width: 550px) {
+      
+    .list li {
+      
+      text-align: left;
+      
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .lan_btn {
+    margin-right: 70px;
+    
+  }
+
+  .text {
+    margin-right: 70px;
+  }
+  
+  
+}
