@@ -10,7 +10,7 @@ function Content(props) {
           <p className={ContentCss.sub_heading}>{props.string2}</p>
         </div>
         <div className={ContentCss.big_box}>
-        {props.imageSrc != null ? <img className = {ContentCss.img} src={props.imageSrc} alt="An image" /> : null}
+        {props.imageSrc != null ? <img className = {ContentCss.img} src={props.imageSrc} alt="netflix" /> : null}
 
         </div>
       </div>
